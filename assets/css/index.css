@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width:1280px;
+    margin: auto;
+}
+.line {
+    border: 1px solid  #BDBDBD;
+    background-color:#BDBDBD ;
+    height: 0px;
+    max-width:780px;
+    margin:auto;
+    margin-top: 4px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    max-width:780px;
+    margin: auto;
+}
+.allbuthover{
+    position: relative;
+    bottom: -6px;
+    width: 89px;
+    height: 4px;
+    width:12rem;
+    background: #2F80ED;
+    border-radius: 4px 4px 0px 0px;
+    visibility: hidden;
+    margin: auto;
+    margin-top: 2px;
+}
+.butall:hover + .allbuthover{
+    visibility: visible;
+}
+.activehover{
+    position: relative;
+    bottom: -6px;
+    width: 89px;
+    height: 4px;
+    width:12rem;
+    background: #2F80ED;
+    border-radius: 4px 4px 0px 0px;
+    visibility: hidden;
+    margin: auto;
+    margin-top: 2px;
+}
+
+.butactive:hover + .activehover{
+    visibility: visible;
+}
+.completehover{
+    position: relative;
+    bottom: -6px;
+    width: 89px;
+    height: 4px;
+    width:12rem;
+    background: #2F80ED;
+    border-radius: 4px 4px 0px 0px;
+    visibility: hidden;
+    margin: auto;
+    margin-top: 2px;
+}
+
+.butcompleted:hover + .completehover{
+    visibility: visible;
+}
+.butall,.butactive,.butcompleted{
+    
+    width:13rem;
+    border: 1px solid rgb(224, 223, 223);
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 8px;
+    height: 1.8rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+.todo{
+    display: block;
+    color:#333333;
+    
+    font-family: 'Raleway','sans-serif';
+    text-align: center;
+    font-style: normal;
+    letter-spacing: -0.045em;
+    font-weight: 700;
+    width:50%;
+    margin:auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.insert{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 1.5%;
+    max-width:780px;
+}
+.insert input{
+    text-indent: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    width:80%;
+    height: 56px;
+    border: 1px solid #BDBDBD;
+    border-radius: 12px;
+    outline-color:#2F80ED;
+}
+input::placeholder {
+    text-indent: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.insert input:hover{
+    border-color: #2F80ED;
+    
+}
+.insert button{
+    display: block;
+    width:15%;
+    background: #2F80ED;
+    font-family: 'Montserrat';
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    height: 56px;
+    color: #FFFFFF;
+    line-height: 17px;
+    box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+    border-radius: 12px;
+
+}   
+
+.task-list{
+    max-width: 780px;
+    margin: auto;
+    margin-top: 30px;
+}
+.list-ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.list-ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=checkbox]  {
+    
+        width: 24px !important;
+        height: 24px !important;
+        margin: 5px;
+        font-size: 2em;
+        
+    }
+
+
+input[type=checkbox]:hover {
+    border-color: 2px solid #2F80ED!important;
+}
+label{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+vertical-align: middle;
+height: 80px;
+width: 250px;
+line-height: 34px;
+}
+
+.x-icon{
+    margin-left: 60%;
+    height: 100%;
+    color: rgba(105, 101, 101, 0.39);
+    font-size: 25px;
+}
+.y-icon{
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 16px;
+    border-radius: 2px;
+    padding-right: 10px;
+    font-weight: 100;
+}
+.x-icon:hover{
+    color: rgba(105, 101, 101, 0.596);
+}
+
+.btn-div{
+    max-width: 780px;
+    margin: auto;
+}
+
+.delete-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 40px;
+    color: #FFFFFF;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+    background: #EB5757;
+    border-radius: 4px;
+    border: none;
+    margin-left: auto;
+}

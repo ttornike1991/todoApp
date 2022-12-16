@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Montserrat:wght@600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="todo">#todo</h1>
+        <div class="buttons">
+            <div class="first-but">
+                <button class="butall" id="all"  >All</button>
+                <div class="allbuthover"></div>
+            </div>
+            <div class="sec-button">
+                <button class="butactive" id="active" >Active</button>
+                <div class="activehover"></div>
+            </div>
+            <div class="third-butt">
+                <button class="butcompleted" id="completed">Completed</button> 
+                <div class="completehover"></div>
+            </div>    
+        </div>           
+        <div class="line"></div>
+        <form action="" class="insert" id="form-1">
+            <input type="text" placeholder="add details" id ="input-1" >
+            <button type="submit" class="mainbtn" id="mainbtn" >Add</button>
+        </form>
+        <div class="task-list">
+            <ul class="list-ul" id ="ul-set">
+
+            </ul>
+        </div>
+
+        <p>This is all</p>
+    </div>  
+    <script src="./app.js"></script>
+</body>
+</html>
